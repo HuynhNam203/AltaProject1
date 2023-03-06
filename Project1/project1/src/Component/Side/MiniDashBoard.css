@@ -1,0 +1,190 @@
+.Sider2 {
+    position: relative;
+    height: 880px;
+    width: 401px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+
+
+    background: #FFFFFF !important;
+
+
+    box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
+    border-radius: 8px 0px 0px 8px;
+
+}
+
+.Notification {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 260px;
+    top: 28px;
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFF2E7;
+    border-radius: 32px;
+}
+
+.NotificationIcon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 6px;
+    top: 6px;
+}
+
+
+
+.User {
+    position: relative;
+    width: 124px;
+    height: 42px;
+    left: 165px;
+    top: 24px;
+}
+
+.UserImg {
+    width: 40px;
+    height: 40px;
+    right: 196px;
+    top: 0px;
+
+    border-radius: 48px;
+    font-weight: 80;
+    font-size: 40px;
+    color: #535261;
+}
+
+.xinchao {
+    position: absolute;
+
+    height: 18px;
+    width: 47px;
+    left: 48px;
+    top: 0px;
+    border-radius: nullpx;
+
+    top: 0px;
+
+    /* 12/12 Reg */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+
+    /* Gray/$-gray-300 */
+
+    color: #7E7D88;
+}
+
+.userName {
+    position: absolute;
+
+    height: 24px;
+    width: 124px;
+    left: 48px;
+    top: 18px;
+    border-radius: nullpx;
+
+
+    /* 16/16 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* Gray/$-gray-400 Text */
+
+    color: #535261;
+}
+
+
+.Sider2Name {
+    position: relative;
+
+    width: 208px;
+    height: 36px;
+    left: 24px;
+    top: 104px;
+
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #FF7506;
+}
+
+.MiniBoard {
+    position: relative;
+
+    width: 253px;
+    height: 83px;
+    left: 0px;
+    top: 156px;
+    list-style: none;
+
+
+    /* White */
+
+}
+
+.MiniBoard a {
+    position: relative;
+
+    align-items: center;
+    width: 353px;
+    height: 36px;
+    left: 24px;
+    top: 12px;
+
+    background-color: #FFFFFF;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+    box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+    border-radius: 12px;
+    /* Gray/$-gray-400 Text */
+
+    color: #535261;
+
+}
+
+
+.Lich {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 10px;
+
+    width: 353px;
+    height: 336px;
+    left: 24px;
+    top: 360px;
+
+    background: #FFFFFF;
+    /* Pink shadow */
+
+    box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+    border-radius: 12px;
+
+}

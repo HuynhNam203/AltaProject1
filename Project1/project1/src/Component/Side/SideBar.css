@@ -1,0 +1,86 @@
+.Sider1{
+    position: absolute;
+width: 200px;
+height:880px;
+left: 0px;
+top: 0px;
+
+/* White */
+
+background: #FFFFFF !important;
+/* Dropdown */
+
+box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
+border-radius: 16px 0px 0px 16px;
+}
+
+.Side{
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    left: 0px;
+    top: 150px;
+    border-radius: 8px;
+    padding: 12px, 12px, 12px, 4px;
+}
+
+
+.Side a {
+    text-decoration: none;
+    color: #7E7D88;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+position: relative;
+width: 200px;
+height: 48px;
+}
+
+
+
+
+.Side :hover {
+    background: #FF7506;
+    color: #FFFFFF;
+
+}
+
+.Logout {
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px;
+gap: 12px;
+
+position: absolute;
+width: 176px;
+height: 48px;
+left: 12px;
+top: 782px;
+
+/* Orange/$-Orange-50 */
+
+background: #FFF2E7;
+border-radius: 8px;
+}
+
+.Logout a {
+    height: 48px;
+width: 176px;
+left: 12px;
+top: 0px;
+border-radius: 8px;
+padding: 12px;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+flex: none;
+order: 1;
+flex-grow: 0;
+color: #FF7506;
+
+}
