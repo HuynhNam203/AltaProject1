@@ -1,86 +1,108 @@
 import React from 'react'
-import { Layout, Menu} from 'antd';
+import { Layout, Menu } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
-import { Form, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./SideBar.css"
+import LogoIcon from '../../Img/LogoIcon.png'
+import DashboardIcon from '../../Img/DashboardIcon.png'
+import ThietbiIcon from '../../Img/ThietbiIcon.png'
+import DichvuIcon from '../../Img/DichvuIcon.png'
+import CapsoIcon from '../../Img/CapsoIcon.png'
+import BaocaoIcon from '../../Img/BaocaoIcon.png'
+import CaidatIcon from '../../Img/CaidatIcon.png'
+import MenuCaidatIcon from '../../Img/MenuCaidatIcon.png'
+import LogoutIcon from '../../Img/LogoutIcon.png'
+
 
 
 const { Sider } = Layout;
 
-const SideData = [
+const SideData  = [
   {
-     title: "DashBoard",
+    title: "DashBoard",
     path: "./DashBoard",
-    icon: <UserOutlined/>,
+    icon: <img src={DashboardIcon} width="20" height="20"/>,
     cName: 'nav-text'
 
   },
   {
-     title: "Thiết bị",
+    title: "Thiết bị",
     path: "./ThietBi",
-    icon: <UserOutlined/>,
+    icon: <img src={ThietbiIcon} width="20" height="20"/>,
     cName: 'nav-text'
 
   },
   {
-     title: "Dịch vụ",
+    title: "Dịch vụ",
     path: "./DichVu",
-    icon: <UserOutlined/>,
+    icon: <img src={DichvuIcon} width="20" height="20"/>,
     cName: 'nav-text'
 
   },
   {
-     title: "Cấp số",
+    title: "Cấp số",
     path: "./CapSo",
-    icon: <UserOutlined/>,
+    icon: <img src={CapsoIcon} width="20" height="20"/>,
     cName: 'nav-text'
 
-  },
-  {
-     title: "Báo cáo",
+  }, {
+    title: "Báo cáo",
     path: "./BaoCao",
-    icon: <UserOutlined/>,
+    icon: <img src={BaocaoIcon} width="20" height="20"/>,
     cName: 'nav-text'
 
-  },
-  {
-     title: "Cài đặt hệ thống",
+  }, {
+    title: "Cài đặt hệ thống",
     path: "./CaiDat",
-    icon: <UserOutlined/>,
-    cName: 'nav-text'
+    icon: <img src={CaidatIcon} width="20" height="20"/>,
+    cName: 'nav-text',
+    menuicon: <img src={MenuCaidatIcon} width="15" height="20"/>
 
   }
 ]
 
 const SideBar = () => {
   return (
-    <Layout>
-      <Sider className='Sider'>
-        
-      <Menu >
+    <div className='Sider1'>
+      <div >
+        <img src={LogoIcon} className='LogoCorp' ></img>
+      </div>
+
+      <Menu>
         <div>
           <ul className='Side'>
-              {SideData.map((item, index) => {
-                return(
-                  <li key={index} >
-                    <Link to={item.path}>
-                      {item.icon}
-                      <span>{item.title}</span>
+            {
+              SideData.map((item, index) => {
+                return (
+
+                  <li key={index}>
+                    <Link to={
+                      item.path
+                    }>
+                      <span className='PropIcon'>{
+                        item.icon
+                      }</span>
+                      <span className='PropName'>{
+                        item.title
+                      }</span>
+                      <span className='PropMenu'>{
+                        item.menuicon
+                      }</span>
                     </Link>
                   </li>
                 )
-              })}
+              })
+            } </ul>
+          <ul className='Logout'>
+            <Link to='./Login'>
+            <img src={LogoutIcon} className="LogoutIcon" /> { }
+              <span>Đăng xuất</span>
+            </Link>
           </ul>
-        
-
         </div>
-              
-            </Menu>
+      </Menu>
+    </div>
 
-       
-      </Sider>
-
-    </Layout>
   )
 }
 

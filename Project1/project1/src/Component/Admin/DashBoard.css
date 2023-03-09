@@ -1,2 +1,370 @@
+.titleDashboard {
+    position: relative;
+
+    width: 102px;
+    height: 30px;
+    left: 148px;
+    top: 29px;
+
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-400 */
+
+    color: #FF9138;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.nameDashboard {
+    position: relative;
+    width: 162px;
+    height: 36px;
+    left: 148px;
+    top: 45px;
+
+    /* 24/24 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+
+}
+
+.BieuDo{
+
+    display: flex;
+    position: relative;
+    top: 60px;
+    left: 148px;
+    right: 230px;
+
+
+}
+.sttDaCap {
+    position: relative;
+    width: 250px;
+    height: 120px;
+
+    margin-right: 30px;
+
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFFFFF;
+    /* Pink shadow */
+
+    box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+    border-radius: 12px;
+}
+
+.sttDaSuDung {
+    position: relative;
+    width: 250px;
+    height: 120px;
+
+    margin-right: 30px;
+    background: #FFFFFF;
+
+
+    /* Pink shadow */
+
+    filter: drop-shadow(2px 2px 15px rgba(70, 64, 67, 0.1));
+    border-radius: 12px;
+    
+}
+
+
+.sttDangCho {
+    position: relative;
+    width: 250px;
+    height: 120px;
+
+    margin-right: 30px;
+    background: #FFFFFF;
+
+
+    /* Pink shadow */
+
+    filter: drop-shadow(2px 2px 15px rgba(70, 64, 67, 0.1));
+    border-radius: 12px;
+}
+
+.sttBoQua {
+    position: relative;
+    width: 250px;
+    height: 120px;
+
+    margin-right: 30px;
+    background: #FFFFFF;
+
+
+    /* Pink shadow */
+
+    filter: drop-shadow(2px 2px 15px rgba(70, 64, 67, 0.1));
+    border-radius: 12px;
+}
+
+.backGround1 {
+    position: relative;
+    background-color: #dfeaff;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    left: 12px;
+    top: 8px;
+}
+
+.sttTitle {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    left: 80px;
+    top: 14px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+
+    color: #535261;
+}
+
+.sttNum {
+    position: absolute;
+    width: 108px;
+    height: 45px;
+    left: 16px;
+    top: 68px;
+
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 45px;
+
+    color: #535261;
+}
+
+.backGround2 {
+    position: relative;
+    background-color: #dbffe4;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    left: 12px;
+    top: 8px;
+}
+
+.usedTitle {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    left: 80px;
+    top: 14px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+
+    color: #535261;
+
+}
+
+.usedNum {
+    position: absolute;
+    width: 108px;
+    height: 45px;
+    left: 16px;
+    top: 68px;
+
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 45px;
+
+    color: #535261;
+}
+
+.backGround3 {
+    position: relative;
+    background-color: #fdecdd;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    left: 12px;
+    top: 8px;
+}
+
+.waitedTitle {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    left: 80px;
+    top: 14px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+
+    color: #535261;
+}
+
+
+.waitedNum {
+    position: absolute;
+    width: 108px;
+    height: 45px;
+    left: 16px;
+    top: 68px;
+
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 45px;
+
+    color: #535261;
+}
+
+.backGround4 {
+    position: relative;
+    background-color: #ffd5d5;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    left: 12px;
+    top: 8px;
+}
+
+.passTitle {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    left: 80px;
+    top: 14px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+
+    color: #535261;
+}
+
+
+.passNum {
+    position: absolute;
+    width: 108px;
+    height: 45px;
+    left: 16px;
+    top: 68px;
+
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 45px;
+
+    color: #535261;
+}
+
+.dashboardImg {
+    position: relative;
+    width: 30px;
+    top: 10px;
+    left: 10px;
+}
+
+
+
+
+
+
+
+
+.increBackground {
+    position: absolute;
+    width: 68px;
+    height: 18px;
+    left: 150px;
+    top: 85.53px;
+    font-size: 12px;
+
+
+    background: rgba(255, 149, 1, 0.15);
+    border-radius: 7.18115px;
+}
+
+.increPercent {
+    position: relative;
+    font-family: Nunito;
+    left: 5px;
+    top: 4px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF9501;
+
+}
+
+.decreBackground {
+    position: absolute;
+    width: 68px;
+    height: 18px;
+    left: 150px;
+    top: 85.53px;
+    font-size: 12px;
+
+
+    background: rgba(231, 63, 63, 0.15);
+    border-radius: 7.18115px;
+}
+
+.decrePercent {
+    position: relative;
+    font-family: Nunito;
+    left: 5px;
+    top: 4px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E73F3F;
+
+}
+
+
+
 
 
