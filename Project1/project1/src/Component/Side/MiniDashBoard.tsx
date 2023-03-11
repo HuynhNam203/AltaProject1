@@ -38,7 +38,7 @@ const MiniDashBoard = () => {
             <Link to='/PerInfo'>
                     <UserOutlined className='UserImg' />
                 </Link>
-                <Link to='./PerInfo'>
+                <Link to='/PerInfo'>
                     <span className='xinchao'>Xin chào</span>
                     <span className='userName'>Lê Quỳnh Ái Vân</span>
                 </Link>

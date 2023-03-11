@@ -28,13 +28,14 @@
     flex-grow: 0;
 }
 
-.PerImg{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    left: 500px;
-    top: 500px;
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
 }
+
+
+
+
 
 .InfoBox {
     display: flex;
@@ -48,318 +49,361 @@
     box-shadow: 0px 2px 6px rgba(219, 219, 219, 0.5);
 }
 
+
+
+.ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload-list.ant-upload-list-picture-circle .ant-upload-list-item-container {
+    width: 40px;
+    position: absolute;
+    height: 248px;
+    width: 248px;
+    left: 24px;
+    top: 40px;
+    border-radius: 317.9999694824219px;
+    background-color: #FFFFFF;
+
+}
+
+.ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload.ant-upload-select {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    left: 195px;
+    top: 246px;
+    border: 2px #FFFFFF;
+
+    background-color: #FF9138;
+    position: absolute;
+}
+.PerImgChild{
+    position: absolute;
+    font-size: 200px;
+    line-height: 280px;
+    top: -2px;
+    left: 43px;
+    border-radius: 317.9999694824219px;
+}
+
+.PerCapture {
+    position: absolute;
+    left: 7px;
+    top: -1px;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0em;
+}
+
 .Ten {
     position: absolute;
     top: 40px;
     left: 296px;
     width: 113px;
-height: 24px;
+    height: 24px;
 
-/* 16/16 Semi */
+    /* 16/16 Semi */
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-
-/* Gray/$-gray-500 */
-
-color: #282739;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
 
 
-/* Inside auto layout */
+    /* Gray/$-gray-500 */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+    color: #282739;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.TenBox{
+.TenBox {
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px 16px;
-gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
 
-position: absolute;
-width: 384px;
-height: 44px;
-left: 296px;
-top: 72px;
+    position: absolute;
+    width: 384px;
+    height: 44px;
+    left: 296px;
+    top: 72px;
 
-/* Gray/$-gray-50 */
+    /* Gray/$-gray-50 */
 
-background: #EAEAEC;
-border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
 }
 
 .InfoFont {
     width: 121px;
-height: 24px;
+    height: 24px;
 
-/* 16/16 Reg */
+    /* 16/16 Reg */
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
 
 
-/* Gray/$-gray-400 Text */
+    /* Gray/$-gray-400 Text */
 
-color: #535261;
+    color: #535261;
 
-opacity: 0.5;
+    opacity: 0.5;
 
-/* Inside auto layout */
+    /* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 
-.Sdt{
+.Sdt {
     position: absolute;
     top: 140px;
     left: 296px;
     width: 95px;
-height: 24px;
+    height: 24px;
 
-/* 16/16 Semi */
+    /* 16/16 Semi */
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-
-/* Gray/$-gray-500 */
-
-color: #282739;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
 
 
-/* Inside auto layout */
+    /* Gray/$-gray-500 */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+    color: #282739;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.SdtBox{
+.SdtBox {
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px 16px;
-gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
 
-position: absolute;
-width: 384px;
-height: 44px;
-left: 296px;
-top: 172px;
+    position: absolute;
+    width: 384px;
+    height: 44px;
+    left: 296px;
+    top: 172px;
 
-/* Gray/$-gray-50 */
+    /* Gray/$-gray-50 */
 
-background: #EAEAEC;
-border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
 }
 
-.Email{
+.Email {
     position: absolute;
     top: 240px;
     left: 296px;
     width: 44px;
-height: 24px;
+    height: 24px;
 
-/* 16/16 Semi */
+    /* 16/16 Semi */
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-
-/* Gray/$-gray-500 */
-
-color: #282739;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
 
 
-/* Inside auto layout */
+    /* Gray/$-gray-500 */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+    color: #282739;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.EmailBox{
+.EmailBox {
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px 16px;
-gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
 
-position: absolute;
-width: 384px;
-height: 44px;
-left: 296px;
-top: 272px;
+    position: absolute;
+    width: 384px;
+    height: 44px;
+    left: 296px;
+    top: 272px;
 
-/* Gray/$-gray-50 */
+    /* Gray/$-gray-50 */
 
-background: #EAEAEC;
-border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
 }
 
-.Username{
+.Username {
     position: absolute;
     top: 40px;
     left: 704px;
     width: 108px;
-height: 24px;
+    height: 24px;
 
-/* 16/16 Semi */
+    /* 16/16 Semi */
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-
-/* Gray/$-gray-500 */
-
-color: #282739;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
 
 
-/* Inside auto layout */
+    /* Gray/$-gray-500 */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+    color: #282739;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.UsernameBox{
+.UsernameBox {
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px 16px;
-gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
 
-position: absolute;
-width: 384px;
-height: 44px;
-left: 704px;
-top: 72px;
+    position: absolute;
+    width: 384px;
+    height: 44px;
+    left: 704px;
+    top: 72px;
 
-/* Gray/$-gray-50 */
+    /* Gray/$-gray-50 */
 
-background: #EAEAEC;
-border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
 }
 
-.Password{
+.Password {
     position: absolute;
     top: 140px;
     left: 704px;
     width: 108px;
-height: 24px;
+    height: 24px;
 
-/* 16/16 Semi */
+    /* 16/16 Semi */
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-
-/* Gray/$-gray-500 */
-
-color: #282739;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
 
 
-/* Inside auto layout */
+    /* Gray/$-gray-500 */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+    color: #282739;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.PasswordBox{
+.PasswordBox {
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px 16px;
-gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
 
-position: absolute;
-width: 384px;
-height: 44px;
-left: 704px;
-top: 172px;
+    position: absolute;
+    width: 384px;
+    height: 44px;
+    left: 704px;
+    top: 172px;
 
-/* Gray/$-gray-50 */
+    /* Gray/$-gray-50 */
 
-background: #EAEAEC;
-border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
 }
 
-.Roles{
+.Roles {
     position: absolute;
     top: 240px;
     left: 704px;
     width: 108px;
-height: 24px;
+    height: 24px;
 
-/* 16/16 Semi */
+    /* 16/16 Semi */
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-
-/* Gray/$-gray-500 */
-
-color: #282739;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
 
 
-/* Inside auto layout */
+    /* Gray/$-gray-500 */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+    color: #282739;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.RolesBox{
+.RolesBox {
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px 16px;
-gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
 
-position: absolute;
-width: 384px;
-height: 44px;
-left: 704px;
-top: 272px;
+    position: absolute;
+    width: 384px;
+    height: 44px;
+    left: 704px;
+    top: 272px;
 
-/* Gray/$-gray-50 */
+    /* Gray/$-gray-50 */
 
-background: #EAEAEC;
-border-radius: 6px;
+    background: #EAEAEC;
+    border-radius: 6px;
 }

@@ -1,13 +1,12 @@
 import React from 'react'
 import "./PerInfo.css"
-import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
+import { UserOutlined } from '@ant-design/icons';
 import SideBar from '../Side/SideBar';
 import { Layout, Menu, theme } from 'antd';
 import { Link } from 'react-router-dom';
 import PerImgUpload from './PerImgUpload';
 
 const { Header, Content, Sider } = Layout;
-
 
 
 export const PerInfo = () => {
@@ -20,7 +19,6 @@ export const PerInfo = () => {
 
             <Layout>
                 <Content>
-                    <div className='PerImg'><PerImgUpload/> </div>
                     <p className='titleInfo'>Thông tin cá nhân</p>
 
                     <div className='InfoBox'>
@@ -58,6 +56,15 @@ export const PerInfo = () => {
                             <div className='Roles'>Vai trò:</div>
                             <div className='RolesBox'>
                                 <div className='InfoFont'>Kế toán</div>
+                            </div>
+                        </div>
+                        <div className='PerImg'>
+                            <div className='PerImgChild'>
+                            <UserOutlined/>
+
+                            </div>
+                            <div className='ImgUpload'>
+                                <PerImgUpload />
                             </div>
                         </div>
                     </div>

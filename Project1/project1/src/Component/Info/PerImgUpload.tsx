@@ -1,73 +1,67 @@
-import React, { useState } from "react";
-import { IFile } from "./IFile";
-import PerImg from "./PerImg";
-const PerImgUpload = () => {
-  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
-  const [currentFile, setCurrentFile] = useState<File>();
-  const [progress, setProgress] = useState(0);
-  const [message, setMessage] = useState("");
-  const [fileInfos, setFileInfos] = useState<IFile[]>([]);
+import React, { useState } from 'react';
+import { CameraOutlined } from '@ant-design/icons';
+import { Modal, Upload } from 'antd';
+import type { RcFile, UploadProps } from 'antd/es/upload';
+import "./PerInfo.css"
+import type { UploadFile } from 'antd/es/upload/interface';
+const getBase64 = (file: RcFile): Promise<string> =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result as string);
+    reader.onerror = (error) => reject(error);
+  });
 
-  const selectFiles = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.files) {
-      setSelectedFiles(Array.from(event.target.files));
-      setProgress(0);
+const PerImgUpload: React.FC = () => {
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewImage, setPreviewImage] = useState('');
+  const [previewTitle, setPreviewTitle] = useState('');
+  const [fileList, setFileList] = useState<UploadFile[]>([]);
+
+  const handleCancel = () => setPreviewOpen(false);
+
+  const handlePreview = async (file: UploadFile) => {
+    if (!file.url && !file.preview) {
+      file.preview = await getBase64(file.originFileObj as RcFile);
     }
+
+    setPreviewImage(file.url || (file.preview as string));
+    setPreviewOpen(true);
+    setPreviewTitle(
+      file.name || file.url!.substring(file.url!.lastIndexOf('/') + 1)
+    );
   };
 
-  const uploadFiles = () => {
-    let currentFile = selectedFiles[0];
+  const handleChange: UploadProps['onChange'] = ({ fileList: newFileList }) =>
+    setFileList(newFileList);
 
-    setProgress(0);
-    setCurrentFile(currentFile);
-
-    PerImg.upload(currentFile, (event: any) => {
-      setProgress(Math.round((100 * event.loaded) / event.total));
-    })
-      .then((response) => {
-        setMessage(response.data.message);
-        return PerImg.getFiles();
-      })
-      .then((files) => {
-        setFileInfos(files);
-      })
-      .catch(() => {
-        setProgress(0);
-        setMessage("Could not upload the file!");
-        setCurrentFile(undefined);
-      });
-
-    setSelectedFiles([]);
-  };
-
+  const uploadButton = (
+    <div className='PerCapture'>
+      <CameraOutlined />
+    </div>
+  );
   return (
     <div>
-      {currentFile && (
-        <div className="progress">
-          <div
-            className="progress-bar progress-bar-info progress-bar-striped"
-            role="progressbar"
-            aria-valuenow={progress}
-            aria-valuemin={0}
-            aria-valuemax={100}
-            style={{ width: progress + "%" }}
-          >
-            {progress}%
-          </div>
-        </div>
-      )}
-
-      <label className="btn btn-default">
-        <input type="file" onChange={selectFiles} />
-      </label>
-
-      <button
-        className="btn btn-success"
-        disabled={!selectedFiles.length}
-        onClick={uploadFiles}
+      <Upload
+        action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+        listType="picture-circle"
+        fileList={fileList}
+        onPreview={handlePreview}
+        onChange={handleChange}
+        maxCount={1}
       >
-        Upload
-      </button>
-      </div>
-      )}
-export default PerImgUpload
+        {fileList.length >= 8 ? null : uploadButton}
+      </Upload>
+      <Modal
+        open={previewOpen}
+        title={previewTitle}
+        footer={null}
+        onCancel={handleCancel}
+      >
+        <img className='PerCapture' alt="example" style={{ width: '100%' }} src={previewImage} />
+      </Modal>
+    </div>
+  );
+};
+
+export default PerImgUpload;

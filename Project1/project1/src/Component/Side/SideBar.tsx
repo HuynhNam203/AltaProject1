@@ -20,40 +20,40 @@ const { Sider } = Layout;
 const SideData  = [
   {
     title: "DashBoard",
-    path: "./DashBoard",
+    path: "/DashBoard",
     icon: <img src={DashboardIcon} width="20" height="20"/>,
     cName: 'nav-text'
 
   },
   {
     title: "Thiết bị",
-    path: "./ThietBi",
+    path: "/ThietBi",
     icon: <img src={ThietbiIcon} width="20" height="20"/>,
     cName: 'nav-text'
 
   },
   {
     title: "Dịch vụ",
-    path: "./DichVu",
+    path: "/DichVu",
     icon: <img src={DichvuIcon} width="20" height="20"/>,
     cName: 'nav-text'
 
   },
   {
     title: "Cấp số",
-    path: "./CapSo",
+    path: "/CapSo",
     icon: <img src={CapsoIcon} width="20" height="20"/>,
     cName: 'nav-text'
 
   }, {
     title: "Báo cáo",
-    path: "./BaoCao",
+    path: "/BaoCao",
     icon: <img src={BaocaoIcon} width="20" height="20"/>,
     cName: 'nav-text'
 
   }, {
     title: "Cài đặt hệ thống",
-    path: "./CaiDat",
+    path: "/CaiDat",
     icon: <img src={CaidatIcon} width="20" height="20"/>,
     cName: 'nav-text',
     menuicon: <img src={MenuCaidatIcon} width="15" height="20"/>
@@ -94,7 +94,7 @@ const SideBar = () => {
               })
             } </ul>
           <ul className='Logout'>
-            <Link to='./Login'>
+            <Link to='/Login'>
             <img src={LogoutIcon} className="LogoutIcon" /> { }
               <span>Đăng xuất</span>
             </Link>
