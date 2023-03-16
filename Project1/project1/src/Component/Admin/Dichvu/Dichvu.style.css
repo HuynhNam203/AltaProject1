@@ -1,0 +1,46 @@
+.titleDichvu {
+    position: relative;
+
+    width: auto;
+    height: 30px;
+    left: 148px;
+    top: 29px;
+
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-400 */
+
+    color: #FF9138;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.section-content {
+    position: relative;
+
+    width: auto;
+    height: 30px;
+    left: 148px;
+    top: 59px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #FF9138;
+}

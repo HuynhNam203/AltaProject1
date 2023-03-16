@@ -6,6 +6,9 @@ import { PerInfo } from './Component/Info/PerInfo';
 import { Header } from './Shared/Header';
 import { Sider } from './Shared/Sider';
 import Login from './Component/Login/Login';
+import ResetPass from './Component/ResetPass/ResetPass';
+import NewPass from './Component/ResetPass/NewPass';
+import Dichvu from './Component/Admin/Dichvu/Dichvu';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
       <Route path='/PerInfo' element={<PerInfo />} />
       <Route path='/Dashboard' element={<DashBoard />} />
       <Route path='/Login' element={<Login />} />
+      <Route path='/ResetPass' element={<ResetPass />} />
+      <Route path='/NewPass' element={<NewPass />} />
+      <Route path='/Dichvu' element={<Dichvu />} />
     </Routes>
     </BrowserRouter>
   );
