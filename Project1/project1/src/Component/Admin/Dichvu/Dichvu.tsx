@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { UserOutlined } from '@ant-design/icons';
+import { PlusOutlined } from '@ant-design/icons';
 import SideBar from '../../Side/SideBar';
 import { Layout } from 'antd';
 import { Link } from 'react-router-dom';
-import { ListDichvu, childListDichvu, PageDichvu } from "./Dichvu.type";
+import { ListDichvu, PageDichvu } from "./Dichvu.type";
 import "./Dichvu.style.css"
 import DichvuList from './ListDichvu';
 import AddDichvu from './AddDichvu';
@@ -14,7 +14,7 @@ const { Header, Content, Sider } = Layout;
 
 const Dichvu = () => {
     const [listDichVu, setlistDichVu] = useState(
-        childListDichvu as ListDichvu[]);
+        [] as ListDichvu[]);
 
         // Show dưới dạng 1 list
         const [shownPage, setShownPage] = useState(PageDichvu.list)
@@ -59,18 +59,23 @@ const Dichvu = () => {
 
             <Layout>
                 <Content>
-                    <p className='titleDichvu'>This is Dichvu Page</p>
-                    <section className='section-content'>
+                    <section className='section-dvcontent'>
 
                         {/* show lên list */}
                         {shownPage === PageDichvu.list  &&
                         (
                             <>
-                            <input type="button" value="Thêm dịch vụ" onClick={onAddDichvuClick}/>
+                            <input type="button" className='adddvbtn' onClick={onAddDichvuClick} style={{fontSize:14,fontFamily:"Nunito",fontWeight:600,textAlign:'center',lineHeight:19}}/>
+                            <div className='hoverdvbtnicon' onClick={onAddDichvuClick}>
+                            <div className='btndvname'>Thêm dịch vụ</div>
+                            <div className="btndvicon"><PlusOutlined /></div>
+                            </div>
+                            <div className='listDichVu'>
                             <DichvuList 
                             list={listDichVu}
                             onEdit={editDichVuData}
                             />
+                            </div>
                             {/* <input type="button" value="Cập nhật" onClick={() => onEdit(dichvu)}/> */}
 
                             </>

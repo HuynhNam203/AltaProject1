@@ -1,11 +1,11 @@
 .LineChartProp {
     display: flex;
     position: relative;
-    width: 950px;
-    height: 550px;
+    width: 791px;
+    height: 464px;
     border-radius: 12px;
-    top: 100px;
-    left: 220px;
+    top: 74px;
+    left: 24px;
 
 
     background: #FFFFFF;
@@ -17,10 +17,10 @@
     position: absolute;
 
     font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
     text-align: left;
     left: 24px;
     top: 24px;
@@ -35,7 +35,7 @@
     display: flex;
     position: absolute;
     width: 940px;
-    height: 444px;
+    height: 360px;
     border-radius: 12px;
     top: 90px;
     left: 20px;

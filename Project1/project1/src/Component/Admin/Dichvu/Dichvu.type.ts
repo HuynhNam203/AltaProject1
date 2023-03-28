@@ -4,19 +4,13 @@ export interface ListDichvu {
     name: string;
     description: string;
     action: string;
+    tang_tu_dong_dau: string;
+    tang_tu_dong_sau: string;
+    prefix: string;
+    surfix: string;
 }
 
 
-export const childListDichvu: ListDichvu[] = [
-    {
-        id: new Date().toJSON().toString(),
-        dich_vu: "KIO_01",
-        name: "Kiosk",
-        description: "Hoạt động",
-        action: "Hoạt động"
-
-    },
-]
 
 export enum PageDichvu {
     list,

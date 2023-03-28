@@ -1,46 +1,355 @@
-.titleDichvu {
+.section-dvcontent {
+  position: relative;
+
+  width: auto;
+  height: 30px;
+  left: 24px;
+  top: 59px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #ff9138;
+}
+
+.adddvbtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 4px;
+  gap: 4px;
+  position: absolute;
+  left: 1136px;
+  top: 195px;
+  width: 80px;
+  height: 104px;
+  background-color: #fff2e7;
+  border: 2px #e7e9f2;
+}
+
+.hoverdvbtnicon {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  left: 1164px;
+  top: 211px;
+  border-radius: 9px;
+
+  background: #ff9138;
+}
+
+.btndvname {
+  width: 72px;
+  height: 38px;
+  position: absolute;
+  top: 44px;
+  right: -20px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #ff7506;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.btndvicon {
+  position: absolute;
+  top: 0px;
+  left: 7px;
+  font-size: 16px;
+  font-weight: 800;
+  font-variant: normal;
+  color: #ffffff;
+}
+
+.dvtitle {
+  position: absolute;
+  width: 200px;
+  height: 36px;
+  left: 0px;
+  top: 45px;
+
+  /* 24/24 Bold */
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  /* Orange/$-Orange-500 */
+
+  color: #ff7506;
+}
+
+.tabledvname {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: relative;
+  width: 1100px;
+  height: 470px;
+  left: 0px;
+  top: 104px;
+
+  filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.tabledvname .tabledvtitle {
+  position: absolute;
+  height: 47px;
+  background-color: #ff9138;
+  border-radius: 12px 12px 0px 0px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.dvtitle1 {
+  position: relative;
+  padding: 0px 17px 0px 16px;
+  gap: 10px;
+
+  width: 150px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.dvtitle2 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 224px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.dvtitle3 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 230px;
+  height: 49px;
+  color: #ffffff;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.dvtitle4 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 253px;
+  height: 49px;
+  color: #ffffff;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+
+.dvtitle5 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+  width: 125px;
+  height: 49px;
+
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+}
+.dvtitle6 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 125px;
+  height: 49px;
+
+  flex: none;
+  order: 6;
+  flex-grow: 0;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  .tabledvdata:nth-child(even) {
     position: relative;
+    /* top: 47px; */
+    background-color: #FFF2E7;
+    display: center;
+    /* text-align: center; */
+    flex-direction: row;
+    
+    /* height: 49px; */
+    
 
-    width: auto;
-    height: 30px;
-    left: 148px;
-    top: 29px;
+  }
 
-    /* 20/20 Bold */
+  .tabledvdata{
+    position: relative;
+    top: 47px;
+    /* text-align: center; */
+   
+}
 
+.dv1 {
+  position: relative;
+  width: 150px;
+  height: 49px;
+  left: 17px;
+
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.dv2 {
+    position: relative;
+    width: 224px;
+    height: 49px;
+  left: 17px;
+
+  
     font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height, or 150% */
-
-
-    /* Orange/$-Orange-400 */
-
-    color: #FF9138;
-
-
-    /* Inside auto layout */
-
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  
     flex: none;
-    order: 1;
+    order: 2;
     flex-grow: 0;
-}
-
-.section-content {
+  }
+  .dv3 {
     position: relative;
+    width: 230px;
+    height: 49px;
+  left: 17px;
 
-    width: auto;
-    height: 30px;
-    left: 148px;
-    top: 59px;
-
+  
     font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+  .dv4 {
+    position: relative;
+    width: 253px;
+    height: 49px;
+  left: 17px;
 
-    color: #FF9138;
-}
+  
+    font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+  }
+  .dv5 {
+    position: relative;
+    width: 125px;
+    height: 49px;
+    left: 17px;
+    top: 0px;
+  
+    font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+  }
+  .dv6 {
+    position: relative;
+    width: 125px;
+    height: 49px;
+    left: 17px;
+    top: 0px;
+  
+    font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+  }
+
+
+  .buttonstyle{
+    border: 0px;
+    background-color:#FFF2E7;
+    color: #4277FF;
+    text-decoration-line: underline;
+  }

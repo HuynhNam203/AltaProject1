@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
-import { UserOutlined } from '@ant-design/icons';
+import { PlusOutlined } from '@ant-design/icons';
 import SideBar from '../../Side/SideBar';
 import { Layout } from 'antd';
 import { Link } from 'react-router-dom';
-import { ListThietBi, childListThietBi, PageThietBi } from "./thietbi.type";
-import "./thietbi.style.css"
-import thietbiList from './Listthietbi';
-import Addthietbi from './Addthietbi';
-import Editthietbi from './Editthietbi';
+import { ListThietBi, PageThietBi } from "./Thietbi.type";
+import "./Thietbi.style.css";
+import ThietbiList from './ListThietbi';
+import AddThietbi from './AddThietbi';
+import EditThietbi from './EditThietbi';
 
 const { Header, Content, Sider } = Layout;
 
 
-const thietbi = () => {
-    const [listthietbi, setlistthietbi] = useState(
-        childListThietBi as ListThietBi[]);
+const Thietbi = () => {
+    const [listThietBi, setlistThietBi] = useState(
+        [] as ListThietBi[]);
 
         // Show dưới dạng 1 list
         const [shownPage, setShownPage] = useState(PageThietBi.list)
@@ -34,21 +34,21 @@ const thietbi = () => {
         }
 
         // Từ đây ta đẩy bản ghi và ListThietBi
-        const addthietbi = (data: ListThietBi) => {
-            setlistthietbi([...listthietbi, data]);
+        const addThietBi = (data: ListThietBi) => {
+            setlistThietBi([...listThietBi, data]);
         }
 
-        const editthietbiData = (data: ListThietBi) => {
+        const editThietBiData = (data: ListThietBi) => {
             setShownPage(PageThietBi.edit);
             setDataToEdit(data);
         }
 
         const updateData = (data: ListThietBi) => {
-            const filteredData = listthietbi.filter(x => x.id == data.id)[0];
-            const indexOfRecord = listthietbi.indexOf(filteredData);
-            const tempData = [...listthietbi];
+            const filteredData = listThietBi.filter(x => x.id == data.id)[0];
+            const indexOfRecord = listThietBi.indexOf(filteredData);
+            const tempData = [...listThietBi];
             tempData[indexOfRecord] = data;
-            setlistthietbi(tempData)
+            setlistThietBi(tempData)
         }
     return (
 
@@ -59,28 +59,34 @@ const thietbi = () => {
 
             <Layout>
                 <Content>
-                    <p className='titlethietbi'>This is thietbi Page</p>
-                    <section className='section-content'>
+                    <section className='section-tbcontent'>
 
                         {/* show lên list */}
                         {shownPage === PageThietBi.list  &&
                         (
                             <>
-                            <input type="button" value="Thêm dịch vụ" onClick={onAddthietbiClick}/>
-                            <thietbiList 
-                            list={listthietbi}
-                            onEdit={editthietbiData}
+                            
+                            <input type="button" onClick={onAddthietbiClick} className="addbtn" style={{fontSize:14,fontFamily:"Nunito",fontWeight:600,textAlign:'center',lineHeight:19}}/>
+                            <div className="hoverbtnicon" onClick={onAddthietbiClick}>
+                                <div className='btnname'>Thêm thiết bị</div>
+                            <div className="btnicon"><PlusOutlined /></div>
+                            </div>
+                            <div className="listThietBi">
+                            <ThietbiList 
+                            list={listThietBi}
+                            onEdit={editThietBiData}
                             />
+                            </div>
                             {/* <input type="button" value="Cập nhật" onClick={() => onEdit(thietbi)}/> */}
 
                             </>
                         )}
                         
                         {shownPage === PageThietBi.add && 
-                        (<Addthietbi onHuyboBtn={showListPage} onSubmitBtn={addthietbi}/>)}
+                        (<AddThietbi onHuyboBtn={showListPage} onSubmitBtn={addThietBi}/>)}
 
                         {shownPage === PageThietBi.edit && 
-                        (<Editthietbi data={dataToEdit} onHuyboBtn={showListPage} onUpdateBtn={updateData}/>)}
+                        (<EditThietbi data={dataToEdit} onHuyboBtn={showListPage} onUpdateBtn={updateData}/>)}
                     </section>
                 </Content>
             </Layout>
@@ -89,7 +95,7 @@ const thietbi = () => {
     );
 }
 
-export default thietbi;
+export default Thietbi;
 
 function useSate(): [any, any] {
     throw new Error('Function not implemented.');

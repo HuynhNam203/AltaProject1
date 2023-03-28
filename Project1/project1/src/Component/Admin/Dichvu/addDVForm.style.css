@@ -1,0 +1,424 @@
+.pageDVName {
+  position: relative;
+  width: 171px;
+  height: 36px;
+  left: 0px;
+  top: 21px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #ff7506;
+}
+
+.DichvuForm {
+  position: relative;
+  width: 1178px;
+  height: 534px;
+  top: 29px;
+
+  background: #ffffff;
+
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 16px;
+}
+
+.pageDVTitle {
+  position: absolute;
+  width: 162px;
+  height: 30px;
+  left: 24px;
+  top: 0px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.boxdv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 553px;
+  height: 76px;
+  left: 24px;
+  top: 58px;
+}
+
+.boxdv2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 553px;
+  height: 76px;
+  left: 24px;
+  top: 146px;
+}
+
+.boxdv3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 553px;
+  height: 164px;
+  left: 601px;
+  top: 58px;
+}
+
+.boxdv4 {
+  position: absolute;
+  width: 326px;
+  height: 48px;
+  left: 415px;
+  top: 558px;
+}
+
+.boxdv4 .btnHuy {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 8px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* Orange/$-Orange-400 */
+
+  color: #ff9138;
+
+  position: absolute;
+  width: 147px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+
+  background: #fff2e7;
+  /* Orange/$-Orange-400 */
+
+  border: 1.5px solid #ff9138;
+  /* down */
+
+  box-shadow: 0px 0px 6px #e7e9f2;
+  border-radius: 8px;
+}
+
+.boxdv4 .btnThem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 8px;
+
+  position: absolute;
+  width: 147px;
+  height: 48px;
+  left: 179px;
+  top: 0px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* white */
+
+  color: #ffffff;
+
+  /* Orange/$-Orange-400 */
+
+  background: #ff9138;
+  border: 1.5px solid #ff9138;
+
+  /* down */
+
+  box-shadow: 0px 0px 6px #e7e9f2;
+  border-radius: 8px;
+}
+
+div .dvtextbox1 {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 270px 10px 12px;
+  gap: 10px;
+
+  width: 553px;
+  height: 44px;
+
+  background: #ffffff;
+
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+div .dvtextbox2 {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 270px 10px 12px;
+  gap: 10px;
+
+  width: 553px;
+  height: 132px;
+
+  background: #ffffff;
+
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.quytac {
+  position: absolute;
+  width: 136px;
+  height: 30px;
+  left: 24px;
+  top: 218px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #ff7506;
+}
+
+.boxdv5 {
+  position: absolute;
+  width: 600px;
+  height: 24px;
+  left: 24px;
+  top: 290px;
+}
+
+.boxdv5 .ant-checkbox-inner {
+  width: 20px;
+  height: 20px;
+}
+
+.boxdv5 .checkbox {
+  width: 220px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+}
+
+.boxdv5 .dvtextbox3 {
+  box-sizing: border-box;
+  /* Auto layout */
+
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535261;
+
+  width: 61px;
+  height: 44px;
+  left: 187px;
+
+  background: #ffffff;
+
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+}
+
+.boxdv5 .spaninboxdv5{
+width: 28px;
+height: 24px;
+left: 260px;
+
+/* 16/16 Semi */
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+ margin-left: 12px;
+
+/* Gray/$-gray-500 */
+
+color: #282739;
+}
+
+.boxdv5 .dvtextbox4 {
+  box-sizing: border-box;
+  gap: 10px;
+
+  position: absolute;
+  width: 61px;
+  height: 44px;
+  left: 300px;
+  margin-left: 31px;
+
+  background: #ffffff;
+
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+  text-align: center;
+}
+.boxdv6 {
+  position: absolute;
+  width: 600px;
+  height: 24px;
+  left: 24px;
+  top: 341px;
+}
+
+.boxdv6 .ant-checkbox-inner {
+  width: 20px;
+  height: 20px;
+}
+
+.boxdv6 .checkbox {
+  width: 220px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+}
+
+.boxdv6 .dvtextbox5 {
+    box-sizing: border-box;
+    /* Auto layout */
+  
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535261;
+  
+    width: 61px;
+    height: 44px;
+    left: 187px;
+  
+    background: #ffffff;
+  
+    border: 1.5px solid #d4d4d7;
+    border-radius: 8px;
+  }
+.boxdv7 {
+  position: absolute;
+  width: 600px;
+  height: 24px;
+  left: 24px;
+  top: 392px;
+}
+
+.boxdv7 .ant-checkbox-inner {
+  width: 20px;
+  height: 20px;
+}
+
+.boxdv7 .checkbox {
+  width: 220px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+}
+
+.boxdv7 .dvtextbox6 {
+    box-sizing: border-box;
+    /* Auto layout */
+  
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535261;
+  
+    width: 61px;
+    height: 44px;
+    left: 187px;
+  
+    background: #ffffff;
+  
+    border: 1.5px solid #d4d4d7;
+    border-radius: 8px;
+  }
+.boxdv8 {
+  position: absolute;
+  width: 160px;
+  height: 24px;
+  left: 24px;
+  top: 448px;
+}
+
+.boxdv8 .ant-checkbox-inner {
+  width: 20px;
+  height: 20px;
+}
+
+.boxdv8 .checkbox {
+  width: 220px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+}

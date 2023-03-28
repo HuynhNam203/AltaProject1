@@ -1,6 +1,7 @@
+import React from "react";
 import { useState } from "react";
 import "./Thietbi.style.css";
-import { childListThietBi, ListThietBi } from "./Thietbi.type";
+import { ListThietBi } from "./Thietbi.type";
 import ThietbiDetail from "./ThietbiDetail";
 
 type Props = {
@@ -25,32 +26,38 @@ const ThietbiList = (props: Props) => {
   }
 
   return (
-    <div>
-      This is Thietbi List page
-      <table>
-        <tr>
-          <th>Mã dịch vụ</th>
-          <th>Tên dịch vụ</th>
-          <th>Mô tả</th>
-          <th>Trạng thái hoạt động</th>
+    <div className="title">
+      Danh sách thiết bị
+      <table className="tablename">
+        <tr  className="tabletitle">
+          <th className="th1">Mã thiết bị</th>
+          <th className="th2">Tên thiết bị</th>
+          <th className="th3">Địa chỉ IP</th>
+          <th className="th4">Trạng thái hoạt động</th>
+          <th className="th5">Trạng thái kết nối</th>
+          <th className="th6">Dịch vụ sử dụng</th>
+          <th className="th7"></th>
+          <th className="th8"></th>
         </tr>
         {list.map((Thietbi) => {
           return(
-          <tr key={Thietbi.id}>
-            <td>{Thietbi.dich_vu}</td>
-            <td>{Thietbi.name}</td>
-            <td>{Thietbi.description}</td>
-            <td>{Thietbi.action}</td>
+          <tr key={Thietbi.id} className="tabledata">
+            <td className="td1">{Thietbi.thiet_bi}</td>
+            <td className="td2">{Thietbi.name_thiet_bi}</td>
+            <td className="td3">{Thietbi.ip_address}</td>
+            <td className="td4"></td>
+            <td className="td5"></td>
+            <td className="td6">{Thietbi.dichvusd}</td>
 
-            <td>
+            <td className="td7">
                 <div>
-                    <input type="button" value="View" 
+                    <input className="buttonstyle" type="button" value="View" 
                     onClick={() => viewThietbi(Thietbi)}/>
                 </div>
             </td>
-            <td>
+            <td className="td8">
                 <div>
-                    <input type="button" value="Edit" 
+                    <input className="buttonstyle" type="button" value="Edit" 
                     onClick={() => onEdit(Thietbi)}/>
                 </div>
             </td>

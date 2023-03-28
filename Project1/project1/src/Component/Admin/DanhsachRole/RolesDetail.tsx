@@ -1,15 +1,15 @@
 import React from "react";
-import { ListDichvu } from "./Dichvu.type";
-import "./DichvuDetail.style.css"
+import { ListRoles } from "./Roles.type";
+import "./RolesDetail.style.css"
 
 
 // gọi giá trị onClose và data từ ListDichvu
 type Props = {
     onClose: () => void
-    data: ListDichvu
+    data: ListRoles
 }
 
-const DichvuDetail = (props: Props) => {
+const RolesDetail = (props: Props) => {
     // nhận giá trị
     const {onClose, data} = props
     return (
@@ -19,16 +19,13 @@ const DichvuDetail = (props: Props) => {
         {/* Gán chức năng cho button close */}
       <span className="close" onClick={onClose}>&times;</span>
       <div>
-        <h3>Quản lý dịch vụ</h3>
-        <h4>Thông tin dịch vụ</h4>
+        <h3>Danh sách vai trò</h3>
+        <h4>Thông tin vai trò</h4>
         <div>
-            <label>Mã dịch vụ: {data.dich_vu}</label>
+            <label>Tên vai trò: {data.roles_name}</label>
             </div>
             <div>
-            <label>Tên dịch vụ: {data.name}</label>
-            </div>
-            <div>
-            <label>Mô tả: {data.description}</label>
+            <label>Mô tả: {data.r_description}</label>
             </div>
     </div>
     </div>
@@ -39,4 +36,4 @@ const DichvuDetail = (props: Props) => {
 };
 
 
-export default DichvuDetail
+export default RolesDetail

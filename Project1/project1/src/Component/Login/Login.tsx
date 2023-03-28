@@ -63,7 +63,7 @@ const Login: React.FC = () => (
         </Link>
         
         <Form.Item wrapperCol={{ offset: 5, span: 16 }} className="LoginBox">
-          <Link to="/Dashhboard">
+          <Link to="/Dashboard">
           <Button type="primary" htmlType="submit" className="LoginButton" >            
           Đăng nhập
           </Button>

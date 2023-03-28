@@ -1,0 +1,414 @@
+.addAccountbtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 4px;
+  gap: 4px;
+  position: absolute;
+  left: 1012px;
+  top: 195px;
+  width: 80px;
+  height: 104px;
+  background-color: #fff2e7;
+  border: 2px #e7e9f2;
+}
+
+.hoverAccountbtnicon {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  left: 1038px;
+  top: 211px;
+  border-radius: 9px;
+
+  background: #ff9138;
+}
+
+.btnAccountname {
+  width: 72px;
+  height: 38px;
+  position: absolute;
+  top: 44px;
+  right: -20px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #ff7506;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.btnAccounticon {
+  position: absolute;
+  top: 0px;
+  left: 7px;
+  font-size: 16px;
+  font-weight: 800;
+  font-variant: normal;
+  color: #ffffff;
+}
+
+.titleAccount {
+  position: absolute;
+  width: 193px;
+  height: 36px;
+  left: 0px;
+  top: 80px;
+
+  /* 24/24 Bold */
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  /* Orange/$-Orange-500 */
+
+  color: #ff7506;
+}
+
+.section-content {
+  position: relative;
+
+  width: auto;
+  height: 30px;
+  left: 148px;
+  top: 59px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #ff9138;
+}
+
+.accountTitle {
+  position: absolute;
+  width: 225px;
+  height: 36px;
+  left: -124px;
+  top: 45px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #ff7506;
+}
+
+.tableAccountName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: relative;
+  width: 1112px;
+  height: 470px;
+  left: 0px;
+  top: 104px;
+
+  filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.tableAccountName .tableAccountTitle {
+  position: absolute;
+  height: 47px;
+  background-color: #ff9138;
+  border-radius: 12px 12px 0px 0px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.accountTitle1 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 150px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  order: 1;
+}
+
+.accountTitle2 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 166px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  order: 2;
+}
+
+.accountTitle3 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 130px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  order: 3;
+}
+
+.accountTitle4 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 256px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  order: 4;
+}
+
+.accountTitle5 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 114px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  order: 5;
+}
+
+.accountTitle6 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 194px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  order: 6;
+}
+
+.accountTitle7 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 101px;
+  height: 49px;
+
+  order: 7;
+}
+
+.tableAccountdata:nth-child(even) {
+  position: relative;
+  /* top: 47px; */
+  background-color: #fff2e7;
+  display: center;
+  /* text-align: center; */
+  flex-direction: row;
+
+  /* height: 49px; */
+}
+
+.tableAccountName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: relative;
+  width: 1112px;
+  height: 470px;
+  left: 0px;
+  top: 104px;
+
+  filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.tableAccountdata {
+  position: relative;
+  top: 47px;
+  /* text-align: center; */
+}
+
+.account1 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 150px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #535261;
+
+  order: 1;
+}
+
+.account2 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 166px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #535261;
+
+  order: 2;
+}
+
+.account3 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 130px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #535261;
+
+  order: 3;
+}
+
+.account4 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 256px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #535261;
+
+  order: 4;
+}
+
+.account5 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 114px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #535261;
+
+  order: 5;
+}
+
+.account6 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 194px;
+  height: 49px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #535261;
+
+  order: 6;
+}
+
+.account7 {
+  position: relative;
+  padding: 0px 17px;
+  gap: 10px;
+
+  width: 101px;
+height: 21px;
+
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+  color: #535261;
+
+  order: 7;
+}

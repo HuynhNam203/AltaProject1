@@ -1,76 +1,123 @@
-import { ListThietbi } from "./Thietbi.type";
-import "./thietbi.style.css"
+import { ListThietBi } from "./Thietbi.type";
+import "./Thietbi.style.css";
 import { useState } from "react";
+import React from "react";
+import "./addForm.style.css";
 
 type Props = {
-    data: ListThietbi;
-    onUpdateBtn : (data: ListThietbi) => void
-    onHuyboBtn : () => void
+  data: ListThietBi;
+  onUpdateBtn: (data: ListThietBi) => void;
+  onHuyboBtn: () => void;
+};
 
+const EditThietbi = (props: Props) => {
+  const { data } = props;
 
-}
+  const [thiet_bi, setThietbi] = useState(data.thiet_bi);
+  const [name_thiet_bi, setNameTB] = useState(data.name_thiet_bi);
+  const [ip_address, setIPTB] = useState(data.ip_address);
+  const [action_thiet_bi, setActionTB] = useState(data.action_thiet_bi);
+  const [connect_thiet_bi, setConnectTB] = useState(data.connect_thiet_bi);
+  const [dichvusd, setDichvuSD] = useState(data.dichvusd);
+  const [loai_thiet_bi, setLoaiTB] = useState(data.loai_thiet_bi);
+  const [Username, setUsername] = useState(data.Username);
+  const [Password, setPassword] = useState(data.Password);
 
-const Editthietbi = (props: Props) => {
-    const {data} = props
+  const { onUpdateBtn, onHuyboBtn } = props;
 
-    const [dich_vu, setthietbi] = useState(data.dich_vu);
-    const [name, setName] = useState(data.name);
-    const [description, setDescription] = useState(data.description);
-    const [action, setAction] = useState(data.action);
+  const onThietBiChange = (e: any) => {
+    setThietbi(e.target.value);
+  };
+  const onNameTBChange = (e: any) => {
+    setNameTB(e.target.value);
+  };
+  const onIPTBChange = (e: any) => {
+    setIPTB(e.target.value);
+  };
+  const onActionTBChange = (e: any) => {
+    setActionTB(e.target.value);
+  };
+  const onConnectChange = (e: any) => {
+    setConnectTB(e.target.value);
+  };
+  const onDichvuSDChange = (e: any) => {
+    setDichvuSD(e.target.value);
+  };
+  const onLoaiTBChange = (e: any) => {
+    setLoaiTB(e.target.value);
+  };
+  const onUsernameChange = (e: any) => {
+    setUsername(e.target.value);
+  };
+  const onPasswordChange = (e: any) => {
+    setPassword(e.target.value);
+  };
 
-    const {onUpdateBtn, onHuyboBtn} = props
-
-    const onthietbiChange = (e : any) => {
-        setthietbi(e.target.value)
+  const onSubmitBtnClick = (e: any) => {
+    e.preventDefault();
+    const updateData: ListThietBi = {
+      id: data.id,
+      thiet_bi: thiet_bi,
+      name_thiet_bi: name_thiet_bi,
+      ip_address: ip_address,
+      action_thiet_bi: action_thiet_bi,
+      connect_thiet_bi: connect_thiet_bi,
+      dichvusd: dichvusd,
+      loai_thiet_bi: loai_thiet_bi,
+      Username: Username,
+      Password: Password,
     };
-    const onNameChange = (e : any) => {
-        setName(e.target.value)
-    };
-    const onDescriptionChange = (e : any) => {
-        setDescription(e.target.value)
-    };
-    const onActionChange = (e : any) => {
-        setAction(e.target.value)
-    };
 
-    const onSubmitBtnClick = (e: any) => {
-        e.preventDefault()
-;        const updateData: ListThietbi = {
-            id: data.id,
-            dich_vu: dich_vu,
-            name: name,
-            description: description,
-            action: action
-        }
+    onUpdateBtn(updateData);
+    onHuyboBtn();
+  };
 
-        onUpdateBtn(updateData)
-        onHuyboBtn()
-    }
-
-    return (
+  return (
+    
     <form onSubmit={onSubmitBtnClick}>
-    <div>
-        <label> Mã dịch vụ:</label>
-        <input type="text" value={dich_vu} onChange={onthietbiChange}/>
-    </div>
-    <div>
-        <label> Tên dịch vụ:</label>
-        <input type="text" value={name} onChange={onNameChange}/>
-    </div>
-    <div>
-        <label> Mô tả:</label>
-        <input type="text" value={description} onChange={onDescriptionChange}/>
-    </div>
-    <div>
-        <label> Hoạt động:</label>
-        <input type="text" value={action} onChange={onActionChange}/>
-    </div>
-    <div>
-        <input type="button" value="Huỷ bỏ" onClick={onHuyboBtn}/>
-        <input type="submit" value="Cập nhật"/>
-    </div>
+      <p className="pageName">Quản lý thiết bị</p>
 
-</form>)
-}
+      
+      <div className="submitForm">
+      <p className="pageTitle">Thông tin thiết bị</p>
+      <div className="box1">
+        <label>Mã thiết bị:</label>
+        <input type="text" className="textbox" value={thiet_bi} onChange={onThietBiChange} />
+      </div>
+      <div className="box2">
+        <label>Tên thiết bị:</label>
+        <input type="text" className="textbox" value={name_thiet_bi} onChange={onNameTBChange} />
+      </div>
+      <div className="box3">
+        <label>Địa chỉ IP:</label>
+        <input type="text" className="textbox" value={ip_address} onChange={onIPTBChange} />
+      </div>
+      <div className="box4">
+        <label htmlFor={loai_thiet_bi}  onChange={onLoaiTBChange}>Loại thiết bị:</label>
+        <select name={loai_thiet_bi} placeholder="Chọn loại thiết bị" className="textbox2">
+          <option value="Kiosk">Kiosk</option>
+          <option value="Display_counter">Display counter</option>
+        </select>
+      </div>
+      <div className="box5">
+        <label>Tên đăng nhập:</label>
+        <input type="text" className="textbox2" value={Username} onChange={onUsernameChange} />
+      </div>
+      <div className="box6">
+        <label>Mật khẩu:</label>
+        <input type="password" className="textbox2" value={Password} onChange={onPasswordChange} />
+      </div>
+      <div className="box7">
+        <label>Dịch vụ sử dụng:</label>
+        <input type="text" className="textbox3" value={dichvusd} onChange={onDichvuSDChange} />
+      </div>
+      <div className="box8">
+        <input className="btnHuy" type="button" value="Huỷ bỏ" onClick={onHuyboBtn} />
+        <input className="btnThem" type="submit" value="Cập nhật" />
+      </div>
+      </div>
+    </form>
+  );
+};
 
-export default Editthietbi
+export default EditThietbi

@@ -1,0 +1,375 @@
+.pageRolesName {
+  position: relative;
+  width: 193px;
+  height: 36px;
+  top: 21px;
+  left: -124px;
+  /* 24/24 Bold */
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #ff7506;
+}
+
+.rolesForm {
+  position: relative;
+  width: 1178px;
+  height: 534px;
+  top: 29px;
+  left: -124px;
+
+  background: #ffffff;
+
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 16px;
+}
+
+.rolesForm .pageRolesTitle {
+  position: absolute;
+  width: 154px;
+  height: 30px;
+  left: 24px;
+  top: -4px;
+
+  /* 20/20 Bold */
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #ff7506;
+}
+
+.rolesForm .boxRoles1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 400px;
+  height: 76px;
+  left: 24px;
+  top: 58px;
+}
+
+.rolesForm .boxRoles1 .rolestextbox1 {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 270px 10px 12px;
+  gap: 10px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  width: 560px;
+  height: 44px;
+
+  background: #ffffff;
+
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.rolesForm .boxRoles2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 560px;
+  height: 192px;
+  left: 24px;
+  top: 146px;
+}
+
+.rolesForm .boxRoles2 .rolestextbox2 {
+  display: flex;
+  flex-direction: row;
+  align-items:start;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 10px 10px 10px 12px;
+  gap: 10px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  width: 560px;
+  height: 160px;
+
+  background: #ffffff;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.rolesForm .rolesFunctionForm {
+  position: absolute;
+  width: 560px;
+  height: 420px;
+  left: 608px;
+  top: 90px;
+
+  /* Orange/$-Orange-50 */
+
+  background: #fff2e7;
+  border-radius: 8px;
+}
+
+.rolesForm .rolesFunctionForm .chucNangA {
+  position: absolute;
+  width: 177px;
+  height: 30px;
+  left: 24px;
+  top: -4px;
+
+  /* 20/20 Bold */
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  /* Orange/$-Orange-500 */
+
+  color: #ff7506;
+}
+
+.rolesFunctionForm .checkboxa1 {
+  position: absolute;
+  width: 170px;
+  height: 20px;
+  left: 24px;
+  top: 57px;
+}
+
+.rolesFunctionForm .checkboxa2 {
+  position: absolute;
+  width: 170px;
+  height: 24px;
+  left: 16px;
+  top: 94px;
+}
+.rolesFunctionForm .checkboxa3 {
+  position: absolute;
+  width: 170px;
+  height: 24px;
+  left: 16px;
+  top: 130px;
+}
+.rolesFunctionForm .checkboxa4 {
+  position: absolute;
+  width: 170x;
+  height: 24px;
+  left: 16px;
+  top: 166px;
+}
+
+.rolesForm .rolesFunctionForm .chucNangB {
+  position: absolute;
+  width: 176px;
+  height: 30px;
+  left: 24px;
+  top: 194px;
+
+  /* 20/20 Bold */
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  /* Orange/$-Orange-500 */
+
+  color: #ff7506;
+}
+
+.rolesFunctionForm .checkboxb1 {
+  position: absolute;
+  width: 170px;
+  height: 24px;
+  left: 24px;
+  top: 255px;
+}
+
+.rolesFunctionForm .checkboxb2 {
+  position: absolute;
+  width: 170px;
+  height: 24px;
+  left: 16px;
+  top: 291px;
+}
+
+.rolesFunctionForm .checkboxb3 {
+  position: absolute;
+  width: 170px;
+  height: 24px;
+  left: 16px;
+  top: 327px;
+}
+
+.rolesFunctionForm .checkboxb4 {
+  position: absolute;
+  width: 170px;
+  height: 24px;
+  left: 16px;
+  top: 363px;
+}
+.rolesFunctionForm .boxRoles5 {
+  position: absolute;
+  width: 326px;
+  height: 48px;
+  left: 650px;
+  top: 530px;
+}
+
+.boxRoles5 {
+  position: absolute;
+  width: 326px;
+  height: 48px;
+  left: 415px;
+  top: 558px;
+}
+
+.boxRoles5 .btnHuy {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 8px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* Orange/$-Orange-400 */
+
+  color: #ff9138;
+
+  position: absolute;
+  width: 147px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+
+  background: #fff2e7;
+  /* Orange/$-Orange-400 */
+
+  border: 1.5px solid #ff9138;
+  /* down */
+
+  box-shadow: 0px 0px 6px #e7e9f2;
+  border-radius: 8px;
+}
+
+.boxRoles5 .btnThem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 8px;
+
+  position: absolute;
+  width: 147px;
+  height: 48px;
+  left: 179px;
+  top: 0px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* white */
+
+  color: #ffffff;
+
+  /* Orange/$-Orange-400 */
+
+  background: #ff9138;
+  border: 1.5px solid #ff9138;
+
+  /* down */
+
+  box-shadow: 0px 0px 6px #e7e9f2;
+  border-radius: 8px;
+}
+
+.boxRoles5 .btnUpd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+  
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 179px;
+    top: 0px;
+  
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+  
+    /* white */
+  
+    color: #ffffff;
+  
+    /* Orange/$-Orange-400 */
+  
+    background: #ff9138;
+    border: 1.5px solid #ff9138;
+  
+    /* down */
+  
+    box-shadow: 0px 0px 6px #e7e9f2;
+    border-radius: 8px;
+  }

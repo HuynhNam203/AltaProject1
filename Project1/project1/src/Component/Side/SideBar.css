@@ -1,123 +1,109 @@
 .Sider1 {
-    position: relative;
-    width: 260px;
-    height: 910px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF !important;
-    box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
-
+  position: relative;
+  width: 200px;
+  height: 810px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff !important;
+  box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
 }
 
 .LogoCorp {
-    position: absolute;
-    height: 134px;
-    width: 150px;
-    left: 75px;
-    top: 32px;
-    border-radius: 0px;
-    
-
-
-
+  position: absolute;
+  width: 80px;
+  height: 64px;
+  left: 60px;
+  top: 32px;
 }
 
 .Side {
-    position: absolute;
-    width: 260px;
-    height: 48px;
-    left: 0px;
-    top: 220px;
-    border-radius: 8px;
-    padding: 12px, 12px, 12px, 4px;
+  position: absolute;
+  width: 0px;
+height: 48px;
+left: 0px;
+top: 150px;
+  border-radius: 8px;
+  padding: 12px, 12px, 12px, 4px;
 }
-
 
 .Side a {
-    text-decoration: none;
-    color: #7E7D88;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 4px;
-    position: relative;
-    width: 220px;
-    height: 54px;
-    left: 0px;
+  text-decoration: none;
+  color: #7e7d88;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+  position: relative;
+  width: 200px;
+  height: 54px;
+  left: 0px;
 }
 
-.PropIcon{
-    position: relative;
-    left: 16px;
-    
+.PropIcon {
+  position: relative;
 }
 
-.PropName{
-    position: relative;
-    left: 26px;
+.PropName {
+  position: relative;
+  left: 9px;
 }
 
-.PropMenu{
-    position: relative;
-    left: 26px;
+.PropMenu {
+  position: relative;
+  left: 10px;
 }
-
-
 
 .Side :hover {
-    background: #FFF2E7;
-    color: #FF7506;
-
+  background: #fff2e7;
+  color: #ff7506;
 }
 
 .Logout {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    gap: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
 
-    position: relative;
-    width: 176px;
-    height: 48px;
-    left: 38px;
-    top: 782px;
+  position: relative;
+  width: 176px;
+height: 48px;
+left: 12px;
+top: 700px;
 
-    /* Orange/$-Orange-50 */
+  /* Orange/$-Orange-50 */
 
-    background: #FFF2E7;
-    border-radius: 8px;
+  background: #fff2e7;
+  border-radius: 8px;
 }
 
 .LogoutIcon {
-    position: relative;
-    height: 20px;
-    width: 20px;
-    left: -8px;
-    top: 4px;
-    border-radius: 0px;
-    right: 144px;
-
+  position: relative;
+  height: 20px;
+  width: 20px;
+  left: -8px;
+  top: 4px;
+  border-radius: 0px;
+  right: 144px;
 }
 
 .Logout a {
-    position: absolute;
+  position: absolute;
 
-    height: 48px;
-    width: 176px;
-    left: 8px;
-    top: 0px;
-    border-radius: 8px;
-    padding: 12px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    color: #FF7506;
-
+  height: 48px;
+  width: 176px;
+  left: 8px;
+  top: 0px;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  color: #ff7506;
 }

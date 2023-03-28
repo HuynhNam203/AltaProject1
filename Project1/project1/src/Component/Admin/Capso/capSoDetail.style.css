@@ -1,0 +1,161 @@
+.capSoDetailTitle{
+    position: absolute;
+width: 163px;
+height: 36px;
+left: 0px;
+top: 94px;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FF7506;
+
+}
+.rollbackbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 4px;
+    gap: 4px;
+    position: absolute;
+    left: 1136px;
+    top: 154px;
+    width: 80px;
+    height: 75px ;
+    background-color: #fff2e7;
+    border: 2px #e7e9f2;
+  }
+  
+  .hoverbtnrollbackicon {
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    left: 1162px;
+    top: 169px;
+    border-radius: 9px;
+  
+    background: #ff9138;
+  }
+  
+  .btnrollbackname {
+    width: 72px;
+    height: 28px;
+    position: absolute;
+    top: 30px;
+    right: -20px;
+  
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+    text-align: center;
+  
+    color: #ff7506;
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .btnrollbackicon {
+    position: absolute;
+    top: 0px;
+    left: 7px;
+    font-size: 16px;
+    font-weight: 800;
+    font-variant: normal;
+    color: #ffffff;
+  }
+
+.capSoInfoBox {
+  position: absolute;
+  width: 1112px;
+  height: 604px;
+  left: 0px;
+  top: 154px;
+
+  background: #ffffff;
+
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 16px;
+}
+
+.capSoDetailName {
+  position: absolute;
+  width: 155px;
+  height: 30px;
+  left: 24px;
+  top: 16px;
+
+  /* 20/20 Bold */
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff7506;
+}
+
+.csBox1 {
+  position: absolute;
+  width: 253px;
+  height: 24px;
+  top: 66px;
+}
+.csBox2 {
+  position: absolute;
+  width: 238px;
+  height: 24px;
+  top: 106px;
+}
+.csBox3 {
+  position: absolute;
+  width: 194px;
+  height: 24px;
+  top: 146px;
+}
+.csBox4 {
+  position: absolute;
+  width: 269px;
+  height: 24px;
+  top: 186px;
+}
+.csBox5 {
+  position: absolute;
+  width: 269px;
+  height: 24px;
+  top: 226px;
+}
+.csBox6 {
+  position: absolute;
+  width: 162px;
+  height: 24px;
+  left: 544px;
+  top: 66px;
+}
+.csBox7 {
+  position: absolute;
+  width: 204px;
+  height: 24px;
+  left: 544px;
+  top: 106px;
+}
+.csBox8 {
+  position: absolute;
+  width: 219px;
+  height: 24px;
+  left: 544px;
+  top: 146px;
+}
+.csBox9 {
+  position: absolute;
+  width: 301px;
+  height: 24px;
+  left: 544px;
+  top: 186px;
+}

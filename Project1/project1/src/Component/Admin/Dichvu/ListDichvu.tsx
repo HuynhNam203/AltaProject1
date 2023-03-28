@@ -1,6 +1,7 @@
+import React from "react";
 import { useState } from "react";
 import "./Dichvu.style.css";
-import { childListDichvu, ListDichvu } from "./Dichvu.type";
+import { ListDichvu } from "./Dichvu.type";
 import DichvuDetail from "./DichvuDetail";
 
 type Props = {
@@ -25,32 +26,34 @@ const DichvuList = (props: Props) => {
   }
 
   return (
-    <div>
-      This is Dichvu List page
-      <table>
-        <tr>
-          <th>Mã dịch vụ</th>
-          <th>Tên dịch vụ</th>
-          <th>Mô tả</th>
-          <th>Trạng thái hoạt động</th>
+    <div className="dvtitle">
+      Danh sách dịch vụ
+      <table className="tabledvname">
+        <tr className="tabledvtitle">
+          <th className="dvtitle1">Mã dịch vụ</th>
+          <th className="dvtitle2">Tên dịch vụ</th>
+          <th className="dvtitle3">Mô tả</th>
+          <th className="dvtitle4">Trạng thái hoạt động</th>
+          <th className="dvtitle5"></th>
+          <th className="dvtitle6"></th>
         </tr>
         {list.map((dichvu) => {
           return(
-          <tr key={dichvu.id}>
-            <td>{dichvu.dich_vu}</td>
-            <td>{dichvu.name}</td>
-            <td>{dichvu.description}</td>
-            <td>{dichvu.action}</td>
+          <tr key={dichvu.id} className="tabledvdata">
+            <td className="dv1">{dichvu.dich_vu}</td>
+            <td className="dv2">{dichvu.name}</td>
+            <td className="dv3">{dichvu.description}</td>
+            <td className="dv4">{dichvu.action}</td>
 
-            <td>
-                <div>
-                    <input type="button" value="View" 
+            <td className="dv5">
+                <div >
+                    <input className="buttonstyle" type="button" value="View" 
                     onClick={() => viewDichvu(dichvu)}/>
                 </div>
             </td>
-            <td>
-                <div>
-                    <input type="button" value="Edit" 
+            <td className="dv6">
+                <div >
+                    <input className="buttonstyle" type="button" value="Edit" 
                     onClick={() => onEdit(dichvu)}/>
                 </div>
             </td>
