@@ -107,3 +107,9 @@ top: 700px;
   flex-grow: 0;
   color: #ff7506;
 }
+
+.sidebarDropdown{
+  position: relative;
+  left:20px;
+  
+}

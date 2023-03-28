@@ -1,193 +1,299 @@
 .Sider2 {
-    position: absolute;
-width: 401px;
-height: 810px;
-left: 1039px;
-top: 0px;
+  position: absolute;
+  width: 401px;
+  height: 810px;
+  left: 1039px;
+  top: 0px;
 
+  background: #ffffff !important;
 
-    background: #FFFFFF !important;
-
-
-    box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
-    border-radius: 8px 0px 0px 8px;
-
+  box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
+  border-radius: 8px 0px 0px 8px;
 }
 
 .Notification {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 109px;
-    top: 28px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 109px;
+  top: 28px;
 
-    /* Orange/$-Orange-50 */
+  /* Orange/$-Orange-50 */
 
-    background: #FFF2E7;
-    border-radius: 32px;
+  background: #fff2e7;
+  border-radius: 32px;
 }
 
 .NotificationIcon {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    size: 10px;
-    left: 6px;
-    top: 5px;
-    color: #FFAC6A;
-    font-size: 20px;
-
-    
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  size: 10px;
+  left: 6px;
+  top: 5px;
+  color: #ffac6a;
+  font-size: 20px;
 }
 
-
-
-
-
 .User {
-    position: relative;
-    width: 124px;
-    height: 42px;
-    left: 165px;
-    top: 24px;
+  position: relative;
+  width: 124px;
+  height: 42px;
+  left: 165px;
+  top: 24px;
 }
 
 .UserImg {
-    width: 40px;
-    height: 40px;
-    right: 196px;
-    top: 0px;
+  width: 40px;
+  height: 40px;
+  right: 196px;
+  top: 0px;
 
-    border-radius: 48px;
-    font-weight: 80;
-    font-size: 40px;
-    color: #535261;
+  border-radius: 48px;
+  font-weight: 80;
+  font-size: 40px;
+  color: #535261;
 }
 
 .xinchao {
-    position: absolute;
+  position: absolute;
 
-    height: 18px;
-    width: 47px;
-    left: 48px;
-    top: 0px;
+  height: 18px;
+  width: 47px;
+  left: 48px;
+  top: 0px;
 
-    top: 0px;
+  top: 0px;
 
-    /* 12/12 Reg */
+  /* 12/12 Reg */
 
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    /* identical to box height, or 150% */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
 
+  /* Gray/$-gray-300 */
 
-    /* Gray/$-gray-300 */
-
-    color: #7E7D88;
+  color: #7e7d88;
 }
 
 .userName {
-    position: absolute;
+  position: absolute;
 
-    height: 24px;
-    width: 124px;
-    left: 48px;
-    top: 18px;
+  height: 24px;
+  width: 124px;
+  left: 48px;
+  top: 18px;
 
+  /* 16/16 Bold */
 
-    /* 16/16 Bold */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
+  /* Gray/$-gray-400 Text */
 
-
-    /* Gray/$-gray-400 Text */
-
-    color: #535261;
+  color: #535261;
 }
 
-
 .Sider2Name {
-    position: relative;
+  position: relative;
 
-    width: 208px;
-    height: 36px;
-    left: 24px;
-    top: 104px;
+  width: 118px;
+  height: 36px;
+  left: 24px;
+  top: 58px;
 
+  font-family: "Nunito";
+  font-style: normal;
+  font-size: 24;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
 
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-
-    color: #FF7506;
+  color: #ff7506;
 }
 
 .MiniBoard {
-    position: relative;
+  position: relative;
 
-    width: 253px;
-    height: 83px;
-    left: 0px;
-    top: 156px;
-    list-style: none;
+  width: 253px;
+  height: 83px;
+  left: 0px;
+  top: 62px;
+  list-style: none;
 
-
-    /* White */
-
+  /* White */
 }
-
+/* 
 .MiniBoard a {
-    position: relative;
+  position: relative;
 
-    align-items: center;
-    width: 353px;
-    height: 36px;
-    left: 24px;
-    top: 12px;
+  align-items: center;
+  width: 353px;
+  height: 36px;
+  left: 24px;
+  top: 12px;
 
-    background-color: #FFFFFF;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 36px;
-    /* identical to box height, or 150% */
-    box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
-    border-radius: 12px;
-    /* Gray/$-gray-400 Text */
+  background-color: #ffffff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+  border-radius: 12px;
 
-    color: #535261;
-
-}
-
+  color: #535261;
+} */
 
 .Lich {
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 16px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 10px;
 
-position: absolute;
-width: 353px;
-height: 336px;
-left: 24px;
-top: 445px;
+  position: absolute;
+  width: 353px;
+  height: 336px;
+  left: 24px;
+  top: 289px;
 
-background: #FFFFFF;
-/* Pink shadow */
+  background: #ffffff;
+  /* Pink shadow */
 
-box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
-border-radius: 12px;
+  box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+  border-radius: 12px;
+}
 
+.sttMDB {
+  width: 353px;
+  height: 83px;
+  margin-left: 24px;
+  margin-top: 16px;
+  background: #ffffff;
+  box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+  border-radius: 12px;
+}
+
+.circle1 svg {
+  height: 60px;
+  margin-left: 16px;
+  margin-top: 11px;
+}
+.circle1.ant-progress.ant-progress-circle .ant-progress-text {
+  width: 31px;
+  margin-left: 31px;
+  margin-top: -18px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #535261;
+}
+
+.circle2 svg {
+  height: 50px;
+  margin-left: 21px;
+  margin-top: 16px;
+}
+
+.circle2.ant-progress.ant-progress-circle .ant-progress-text,
+.circle3.ant-progress.ant-progress-circle .ant-progress-text {
+  display: none;
+}
+
+.circle3 svg {
+  height: 40px;
+  margin-left: 26px;
+  margin-top: 21px;
+}
+
+.ant-progress {
+  position: absolute;
+}
+
+.spanMDB1 {
+  position: absolute;
+  margin-left: 12px;
+  margin-top: 14px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  color: #535261;
+}
+
+.spanMDB2 {
+  position: absolute;
+  height: 21px;
+  margin-left: 12px;
+  margin-top: 47px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.sttMDB li {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: #7e7d88;
+}
+
+.li_1::marker {
+  color: #ffd130;
+}
+
+.li_2::marker {
+  color: #7e7d88;
+}
+
+.li_3::marker {
+  color: #4277ff;
+}
+
+.li_5::marker {
+  color: #35c75a;
+}
+
+.li_6::marker {
+  color: #f178b6;
+}
+
+.li_num {
+  margin-left: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ff7506;
+}
+
+.li_2 span,
+.li_4 .li_num {
+  margin-left: 7px;
+}
+
+.li_3 .li_num,
+.li_4 .li_num {
+  color: #4277ff;
+}
+
+.li_num_3 {
+  margin-left: 47px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #35c75a;
+}
+
+.li_7 .li_num_3 {
+  margin-left: 37px;
+}
+.li_6 .li_num_3 {
+  margin-left: 61px;
 }
